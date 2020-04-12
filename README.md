@@ -3,12 +3,12 @@ Various Dockerfile for pen testing tool,
 
 This project was made to simplified and unified tool in a team across different os
 
-----------------
-
-LinkedInt
+## LinkedInt
 Build the container:
-docker build -t linkedint .
 
-Complete the config file and start the container
-docker run --rm -it --mount type=bind,source=/PATH/TO/LinkedInt.cfg,target=/LinkedInt/LinkedInt.cfg -v `pwd`:/data linkedint
+`docker build -t linkedint .`
+
+Complete the config file and start the container:
+
+```docker run --rm -it --mount type=bind,source=/PATH/TO/LinkedInt.cfg,target=/LinkedInt/LinkedInt.cfg -v `pwd`:/data linkedint```
 
