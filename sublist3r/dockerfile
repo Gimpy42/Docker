@@ -1,0 +1,7 @@
+FROM python:2.7.17-alpine3.11
+
+RUN apk update && apk add git && pip install update 
+RUN git clone https://github.com/aboul3la/Sublist3r.git && pip install -r /Sublist3r/requirements.txt 
+
+ENTRYPOINT ["python", "/Sublist3r/sublist3r.py"]
+
