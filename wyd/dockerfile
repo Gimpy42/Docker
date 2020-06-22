@@ -1,5 +1,6 @@
-FROM perl:latest
+FROM perl:slim
 
+RUN apt update && apt install -y wget
 RUN wget http://www.remote-exploit.org/content/wyd-0.2.tar.gz && tar xf wyd-0.2.tar.gz
 
 ENTRYPOINT ["perl", "/wyd-0.2/wyd.pl"]
