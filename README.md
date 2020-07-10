@@ -21,3 +21,11 @@ Start the container:
 
 ```docker run --rm -it -v `pwd`:/data sublist3r```
 
+## Spoofcheck
+Build the container
+
+`docker build -t spoofcheck .`
+
+Start the container:
+
+```docker run --rm -it spoofcheck```
