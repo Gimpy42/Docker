@@ -1,4 +1,4 @@
-FROM golang:buster
+FROM golang
 
 CMD apt update && \
     apt install -y openssl osslsigncode mingw-w64 && \
