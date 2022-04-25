@@ -1,4 +1,4 @@
-FROM golang
+FROM golang:latest
 
 RUN apt update && \
     apt install -y openssl osslsigncode mingw-w64 && \
