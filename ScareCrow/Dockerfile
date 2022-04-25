@@ -13,4 +13,4 @@ RUN go get github.com/fatih/color && \
     
 WORKDIR /data
 
-ENTRYPOINT /ScareCrow/ScareCrow
+ENTRYPOINT /bin/bash
