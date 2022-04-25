@@ -10,5 +10,7 @@ RUN go get github.com/fatih/color && \
     go get github.com/yeka/zip && \
     go get github.com/josephspurrier/goversioninfo && \
     go build ScareCrow.go
+    
+WORKDIR /data
 
-ENTRYPOINT [./ScareCrow]
+ENTRYPOINT /ScareCrow/ScareCrow
